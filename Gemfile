@@ -62,6 +62,8 @@ gem "rubocop-rails"
 gem "sidekiq"
 gem "bundler-audit"
 
+gem 'dotenv-rails', '~> 2.7.6'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "byebug", platforms: %i[ mri mingw x64_mingw ]

@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: watch_development
+  url: <%= ENV['DATABASE_URL'].gsub('?', '_development?') %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: watch_test
+  url: <%= ENV['DATABASE_URL'].gsub('?', '_test?') %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: watch_production
-  username: watch
-  password: <%= ENV["WATCH_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'].gsub('?', '_production?') %>

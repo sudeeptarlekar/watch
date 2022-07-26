@@ -104,6 +104,10 @@ GEM
     diff-lcs (1.5.0)
     digest (3.1.0)
     docile (1.4.0)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.8.1)
     factory_bot (6.2.1)
@@ -314,6 +318,7 @@ DEPENDENCIES
   byebug
   capybara
   devise (~> 4.8, >= 4.8.1)
+  dotenv-rails (~> 2.7.6)
   factory_bot_rails (~> 6.2.0)
   faker (~> 2.21.0)
   importmap-rails
