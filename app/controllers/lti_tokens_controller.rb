@@ -1,0 +1,2 @@
+class LtiTokensController < ApplicationController
+end

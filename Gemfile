@@ -64,6 +64,8 @@ gem "bundler-audit"
 
 gem 'dotenv-rails', '~> 2.7.6'
 
+gem "ims-lti", git: "https://github.com/instructure/ims-lti.git", branch: "1.2.x"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "byebug", platforms: %i[ mri mingw x64_mingw ]
